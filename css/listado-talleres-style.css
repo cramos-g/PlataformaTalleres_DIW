@@ -1,0 +1,50 @@
+#nav-principal {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
+    align-items: center;
+}
+
+#logo-nav {
+    width: 298px;
+    height: 82px;
+    padding-top: 8px;
+    margin-left: 20px;
+}
+
+#perfil-nav {
+    width: 76.25px;
+    height: 71.75px;
+    margin-right: 20px;
+}
+
+.boton-nav {
+    white-space: nowrap;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    background-color: white;
+    font-family: "Google Sans", sans-serif;
+}
+
+#seleccion {
+    background-color: whitesmoke;
+}
+
+#sesion {
+    color: white;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+}
