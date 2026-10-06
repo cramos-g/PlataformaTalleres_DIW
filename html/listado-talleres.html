@@ -4,7 +4,7 @@
         <title>Inicio: Listado de talleres</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lexend+Exa:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/listado-talleres-style.css">
     </head>
     <body>
@@ -21,5 +21,85 @@
             </nav>
             <img id="perfil-nav" src="../src/foto-perfil.png">
         </header>
+        <nav id="filtrado">
+            <input type="search" id="busqueda" placeholder="Ejemplo: Arduino, Java, HTML...">
+            <p class="texto-filtrado">Filtrar por...</p>
+            <details>
+                    <summary>DIFICULTAD</summary>
+                    <label>
+                        Principiante<input type="checkbox"/>
+                    </label>
+                    <label>
+                        Avanzado<input type="checkbox"/>
+                    </label>
+                    <label>
+                        Intermedio<input type="checkbox"/>
+                    </label>
+            </details>
+            <details>
+                    <summary>CATEGORÍA</summary>
+                    <label>
+                        Diseño web<input type="checkbox"/>
+                    </label>
+                    <label>
+                        Programación<input type="checkbox"/>
+                    </label>
+                    <label>
+                        Robótica<input type="checkbox"/>
+                    </label>
+                    <label>
+                        Impresión 3D<input type="checkbox"/>
+                    </label>
+                    <label>
+                        Seguridad informática<input type="checkbox"/>
+                    </label>
+            </details>
+            <details>
+                    <summary>DURACIÓN</summary>
+                    <label>
+                        30m<input type="checkbox"/>
+                    </label>
+                    <label>
+                        1h<input type="checkbox"/>
+                    </label>
+                    <label>
+                        1h30m<input type="checkbox"/>
+                    </label>
+                    <label>
+                        2h<input type="checkbox"/>
+                    </label>
+                    <label>
+                        2h30m<input type="checkbox"/>
+                    </label>
+            </details>
+            <details>
+                    <summary>HORARIO</summary>
+                    <label>
+                        Diurno<input type="checkbox"/>
+                    </label>
+                    <label>
+                        Vespertino<input type="checkbox"/>
+                    </label>
+            </details>
+            <details>
+                    <summary>FECHA</summary>
+                    <label>
+                        Este mes<input type="checkbox"/>
+                    </label>
+                    <label>
+                        Próximo mes<input type="checkbox"/>
+                    </label>
+                    <label>
+                        Próximos seis meses<input type="checkbox"/>
+                    </label>
+                    <label>
+                        Próximo año<input type="checkbox"/>
+                    </label>
+            </details>
+            <div id="contenedor-restablecer">
+                <input type="reset" value=" ">
+                <p>Restablecer filtros</p>
+            </div>
+        </nav>
     </body>
 </html>
