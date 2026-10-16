@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Inicio: Listado de talleres</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,7 +11,7 @@
     </head>
     <body>
         <header>
-            <img id="logo-nav" src="../src/logo-pc.png">
+            <img id="logo-nav" src="../src/logo-pc.png" alt="Instituto Politécnico de Altamira">
             <nav>
                 <ul id="nav-principal">
                     <li><button class="boton-nav" id="seleccion">TALLERES</button></li>
@@ -19,96 +21,86 @@
                     <li><button class="boton-nav" id="sesion">Cerrar sesión</button></li>
                 </ul>
             </nav>
-            <img id="perfil-nav" src="../src/foto-perfil.png">
+            <img id="perfil-nav" src="../src/foto-perfil.png" alt="Perfil">
         </header>
+
         <nav id="filtrado">
             <input type="search" id="busqueda" placeholder="Ejemplo: Arduino, Java, HTML...">
             <p class="texto-filtrado">Filtrar por...</p>
-            <details>
-                    <summary>DIFICULTAD</summary>
-                    <label>
-                        Principiante<input type="checkbox"/>
-                    </label>
-                    <label>
-                        Avanzado<input type="checkbox"/>
-                    </label>
-                    <label>
-                        Intermedio<input type="checkbox"/>
-                    </label>
+            <details open>
+                <summary>DIFICULTAD</summary>
+                <label>Principiante<input type="checkbox" checked/></label>
+                <label>Avanzado<input type="checkbox"/></label>
+                <label>Intermedio<input type="checkbox"/></label>
+            </details>
+            <details open>
+                <summary>CATEGORÍA</summary>
+                <label>Diseño web<input type="checkbox"/></label>
+                <label>Programación<input type="checkbox"/></label>
+                <label>Robótica<input type="checkbox"/></label>
+                <label>Impresión 3D<input type="checkbox"/></label>
+                <label>Seguridad informática<input type="checkbox"/></label>
             </details>
             <details>
-                    <summary>CATEGORÍA</summary>
-                    <label>
-                        Diseño web<input type="checkbox"/>
-                    </label>
-                    <label>
-                        Programación<input type="checkbox"/>
-                    </label>
-                    <label>
-                        Robótica<input type="checkbox"/>
-                    </label>
-                    <label>
-                        Impresión 3D<input type="checkbox"/>
-                    </label>
-                    <label>
-                        Seguridad informática<input type="checkbox"/>
-                    </label>
+                <summary>DURACIÓN</summary>
+                <label>30m<input type="checkbox"/></label>
+                <label>1h<input type="checkbox"/></label>
+                <label>1h30m<input type="checkbox"/></label>
+                <label>2h<input type="checkbox"/></label>
+                <label>2h30m<input type="checkbox"/></label>
             </details>
             <details>
-                    <summary>DURACIÓN</summary>
-                    <label>
-                        30m<input type="checkbox"/>
-                    </label>
-                    <label>
-                        1h<input type="checkbox"/>
-                    </label>
-                    <label>
-                        1h30m<input type="checkbox"/>
-                    </label>
-                    <label>
-                        2h<input type="checkbox"/>
-                    </label>
-                    <label>
-                        2h30m<input type="checkbox"/>
-                    </label>
+                <summary>HORARIO</summary>
+                <label>Diurno<input type="checkbox"/></label>
+                <label>Vespertino<input type="checkbox"/></label>
             </details>
             <details>
-                    <summary>HORARIO</summary>
-                    <label>
-                        Diurno<input type="checkbox"/>
-                    </label>
-                    <label>
-                        Vespertino<input type="checkbox"/>
-                    </label>
-            </details>
-            <details>
-                    <summary>FECHA</summary>
-                    <label>
-                        Este mes<input type="checkbox"/>
-                    </label>
-                    <label>
-                        Próximo mes<input type="checkbox"/>
-                    </label>
-                    <label>
-                        Próximos seis meses<input type="checkbox"/>
-                    </label>
-                    <label>
-                        Próximo año<input type="checkbox"/>
-                    </label>
+                <summary>FECHA</summary>
+                <label>Este mes<input type="checkbox"/></label>
+                <label>Próximo mes<input type="checkbox"/></label>
+                <label>Próximos seis meses<input type="checkbox"/></label>
+                <label>Próximo año<input type="checkbox"/></label>
             </details>
             <div id="contenedor-restablecer">
                 <input type="reset" value=" ">
                 <p>Restablecer filtros</p>
             </div>
         </nav>
+
         <main>
-            <p>Resultados de búsqueda:</p>
+            <p class="resultados">Resultados de búsqueda:</p>
+
             <div class="descripcion">
-                <img src="../src/taller-robotica.jpg" class="imagenes-taller">
+                <img src="../src/taller-robotica.jpg" class="imagenes-taller" alt="Taller de robótica">
                 <div class="info">
                     <p class="titulo">ROBÓTICA</p>
-                    <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia risus quis ante dictum, in tincidunt sem venenatis. Vivamus placerat nec lectus eget ultrices.</p>
                 </div>
+                <a class="boton-flecha" href="informacion-detallada.html" aria-label="Ver taller de robótica">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M13 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+
+            <div class="descripcion">
+                <img src="../src/taller-programacion.jpeg" class="imagenes-taller" alt="Taller de programación">
+                <div class="info">
+                    <p class="titulo">PROGRAMACIÓN</p>
+                    <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia risus quis ante dictum, in tincidunt sem venenatis. Vivamus placerat nec lectus eget ultrices.</p>
+                </div>
+                <a class="boton-flecha" href="informacion-detallada.html" aria-label="Ver taller de programación">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M13 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+
+            <div class="descripcion">
+                <img src="../src/taller-impresion3d.jpg" class="imagenes-taller" alt="Taller de impresión 3D">
+                <div class="info">
+                    <p class="titulo">IMPRESIÓN 3D</p>
+                    <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia risus quis ante dictum, in tincidunt sem venenatis. Vivamus placerat nec lectus eget ultrices.</p>
+                </div>
+                <a class="boton-flecha" href="informacion-detallada.html" aria-label="Ver taller de impresión 3D">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M13 5l7 7-7 7"/></svg>
+                </a>
             </div>
         </main>
     </body>
